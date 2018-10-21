@@ -23,8 +23,12 @@ import org.springframework.web.context.request.ServletRequestAttributes;
  * 日志切面 
  */  
 @Aspect  
-@Component
+@Component 
 public class LogAspect {
+	/**
+	 * 
+	 * aop拦截时方法名必须是public修饰
+	 */
 	@Pointcut("execution(public * com.bison.demo.web.*.*(..))")  
     public void webLog(){}  
   
