@@ -8,16 +8,18 @@ import com.bison.demo.service.mail.Email;
 import com.bison.demo.service.mail.MailService;
 
 @RestController
-public class TestController {
+public class MailController {
 	@Autowired
 	MailService mailService;
-	
-	@RequestMapping("/")
-    String home() {
-        return "Hello World!";
-    }
-	@RequestMapping("/test")
-    String test(String name) {
-        return "Hello World test!"+name;
+
+	@RequestMapping("/mail")
+    String mail() throws Exception {
+		Email mail = new Email();
+		mail.setSubject("test");
+		mail.setContent("rrrrrr446665165rrrrrrrrr");
+		mail.setEmail("497691814@qq.com");
+		mailService.sendHtml(mail);
+		System.out.println("ssssssssssssssssss");
+        return "Hello World test!";
     }
 }

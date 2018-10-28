@@ -56,7 +56,7 @@ public class QuartzService {
       System.out.println("now time:" + new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
   }
  //每5启动
-  @Scheduled(fixedRate = 5000)
+  @Scheduled(fixedRate = 500000)
   public void timerToZZP(){
       System.out.println("ZZP:" + new Random().nextLong() + new SimpleDateFormat("HH:mm:ss").format(new Date()));
   }

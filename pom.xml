@@ -23,16 +23,18 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+       
 	</properties>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -50,11 +52,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+		<!-- 包含 mvc,aop 等jar资源 -->
+		
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
